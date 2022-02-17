@@ -24,10 +24,10 @@ Docs
 8. php artisan passport:install
 9. once the application is up and running, open Postman
 10. create a user with register api, and the login  
-11. copy the token given, and use that in the createloan api
-12. admin then needs to list using /all/loans api
-13. admin then needs to approve the latest one using /2/edit/loan api 
-14. once loan is approved, the customer, with his device, hit the loan repay api
+11. copy the token given, and use that in the create loan api :  /api/loans/store 
+12. admin then needs to list using api : /api/show/all/loans
+13. admin then needs to approve the loan using : /api/loan/approve
+14. once loan is approved, the customer, with his device, hit the loan repay api : /api/loan/repay
 15. the loan repay api, will deduct the amount, and then give the customer, how much he has to pay to complete the loan and how much he paid.
 
 - I assume, that in users table, record, with id = 1 is Admin, and only admin can approve a loan.
