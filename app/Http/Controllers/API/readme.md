@@ -7,5 +7,3 @@
  5. After that customer with his device, the device will hit api and add a loan amount.
  6. The repay api in point 5, will return back the total amount the customer needs to pay.
   
-
-Create a db:seed initial user

@@ -26,6 +26,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('register', [RegisterController::class, 'register']);
 Route::post('login', [RegisterController::class, 'login']);
      
-Route::middleware('auth:api')->group( function () {
-    Route::resource('loans', LoanController::class);
-});
+
+
+Route::post('loans/store',[LoanController::class,'store'])->middleware('auth:api');
+Route::post('show/all/loans',[LoanController::class,'index'])->middleware('auth:api');
+Route::post('loan/approve',[LoanController::class,'approveLoan'])->middleware('auth:api');
+Route::post('loan/repay',[LoanController::class,'repayLoan'])->middleware('auth:api');

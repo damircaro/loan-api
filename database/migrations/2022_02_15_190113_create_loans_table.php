@@ -19,6 +19,7 @@ class CreateLoansTable extends Migration
             $table->string('loan_term',255)->nullable();
             $table->string('loan_frequency',255)->default('weekly')->nullable();
             $table->string('customer_id',255)->default('weekly')->nullable();
+            $table->enum('approved',['yes','no'])->default('no')->nullable();
             $table->timestamps();
         });
     }

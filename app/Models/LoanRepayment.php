@@ -5,11 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Loan extends Model
+class LoanRepayment extends Model
 {
     use HasFactory;
-    protected $table = 'loans';
-    protected $guarded = [];
-
-    
+    protected $table = 'loan_repayment';
 }
