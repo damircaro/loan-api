@@ -32,3 +32,12 @@ Docs
 
 - I assume, that in users table, record, with id = 1 is Admin, and only admin can approve a loan.
 - Every user in the users table, is a customer, which needs to be registered.
+
+---------------------
+**Postman Collection**
+
+In project root folder, there is a postman collection called *loan-api-postman-collection.json*
+
+You can import it in postman, and start using the project.
+
+:rocket:  Thank You :rocket:
